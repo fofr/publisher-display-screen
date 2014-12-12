@@ -10,7 +10,7 @@
 
   var manager = {
     init: function(){
-      app.search.init();
+      app.users.init();
     }
   };
 
