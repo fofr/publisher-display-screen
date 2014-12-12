@@ -4,13 +4,10 @@
   $ = root.jQuery;
   if(typeof root.app === 'undefined'){ root.app = {} }
 
-  if(typeof root.app === 'undefined'){
-    root.app = {}
-  }
-
   var manager = {
     init: function(){
       app.users.init();
+      app.slides.init();
     }
   };
 
