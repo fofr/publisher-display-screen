@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Publisher Display Screen</title>
+    <link rel="stylesheet" href="stylesheets/master.css">
+  </head>
+  <body>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="javascripts/realtime.js"></script>
+    <script src="javascripts/app.js"></script>
+    <script>
+      if(typeof window.app === 'undefined'){ window.app = {}; }
+
+      app.settings = {
+        authServer: '/token',
+        profileId: '86065982'
+      };
+
+      $(function(){
+        app.manager.init();
+      });
+    </script>
+  </body>
+</html>
