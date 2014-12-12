@@ -98,3 +98,12 @@ body {
 .online-now {
   background-color: #005ea5;
 }
+
+.online-now-whitehall {
+  background-color: #000;
+}
+
+.online-now-preview {
+  background-color: #ffbf47;
+  color: #0B0C0C;
+}

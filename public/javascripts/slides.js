@@ -13,7 +13,6 @@
       var slides = document.getElementsByClassName('slide');
 
       var cycleSlides = function() {
-        console.log('cycing');
         for (var i = 0; i < slides.length; i++) {
           slides[i].classList.remove('prev');
         }
@@ -27,7 +26,7 @@
         next.classList.add('now');
       };
 
-      //var sliderTimer = window.setInterval(cycleSlides, 3e3);
+      var sliderTimer = window.setInterval(cycleSlides, 10e3);
     }
   };
 
