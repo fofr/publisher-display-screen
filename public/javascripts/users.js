@@ -18,18 +18,14 @@
     },
 
     parseResponse: function(data){
-      console.log(data);
-    },
+      var totalUsers = data.totalsForAllResults['ga:activeVisitors'];
 
-    displayResults: function(){
-
+      users.$totalUsers.text(totalUsers);
     },
 
     init: function(){
-      users.$el = $('#users');
-
+      users.$totalUsers = $('.js-total-users');
       users.reload();
-      users.displayResults();
       window.setInterval(users.reload, 60e3);
     },
 
@@ -37,7 +33,11 @@
       var endpoint = users.endpoint(root.app.settings.profileId);
 
       users.nextRefresh = Date.now() + 60e3;
-      //$.ajax({ dataType: 'json', url: endpoint, success: users.parseResponse});
+      $.ajax({
+        dataType: 'json',
+        url: endpoint,
+        success: users.parseResponse
+      });
     }
   };
 

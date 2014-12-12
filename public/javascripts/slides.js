@@ -27,7 +27,7 @@
         next.classList.add('now');
       };
 
-      var sliderTimer = window.setInterval(cycleSlides, 3e3);
+      //var sliderTimer = window.setInterval(cycleSlides, 3e3);
     }
   };
 

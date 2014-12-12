@@ -20,7 +20,8 @@ body {
   font-weight: bold;
   line-height: 1.18;
   color: #fff;
-  font-size: 25px;
+  /*font-size: 25px;*/
+  font-size: 56px;
 }
 
 .total-center {
@@ -61,4 +62,39 @@ body {
   box-sizing: border-box;
   display: inline-block;
   text-align: left;
+}
+
+.big-280 {
+  font-size: 350%;
+}
+
+.big-340 {
+  font-size: 375%;
+}
+
+.big-480 {
+  font-size: 700%;
+}
+
+.crown {
+  top: 2px;
+  width: 65px;
+}
+
+.govuk {
+  font-size: 95%;
+  text-transform: uppercase;
+}
+
+.govuk .dot {
+  position: relative;
+  margin-left: -0.09em;
+}
+
+/* ==========================================================================
+  Individual slides
+  ========================================================================== */
+
+.online-now {
+  background-color: #005ea5;
 }
